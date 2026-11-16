@@ -2,11 +2,17 @@
 
 
 a = Analysis(
-    ['captureScreenshot.py'],
+    ['CaptureScreenshot.py'],
     pathex=[],
     binaries=[],
     datas=[],
-    hiddenimports=[],
+    hiddenimports=[
+        'docx',
+        'docx.opc.exceptions',
+        'docx.shared',
+        'PIL.Image',
+        'PIL.ImageGrab',
+    ],
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],
